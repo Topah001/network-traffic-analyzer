@@ -1,0 +1,13 @@
+﻿[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offline-network-traffic-analyzer"
+version = "0.1.0"
+description = "Offline-only summaries of user-supplied packet captures"
+requires-python = ">=3.10"
+dependencies = ["scapy>=2.5,<3.0"]
+
+[project.optional-dependencies]
+pcap = ["scapy>=2.5,<3.0"]
